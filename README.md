@@ -1,9 +1,9 @@
-![Node.js CI](https://github.com/versx/DataParser/workflows/Node.js%20CI/badge.svg)
-# DataParser  
+![Node.js CI](https://github.com/WatWowMap/DataParser/workflows/Node.js%20CI/badge.svg)
+# DataParser
 
-Raw proto data parser alternative to [RealDeviceMap](https://github.com/RealDeviceMap/RealDeviceMap) `/raw` endpoint  
+Raw proto data parser alternative to [RealDeviceMap](https://github.com/RealDeviceMap/RealDeviceMap) `/raw` endpoint
 
-Currently parses the following proto responses:  
+Currently parses the following proto responses:
 - GetPlayerResponse (Method 2)
 - ~~GetHoloInventoryResponse (Method 4)~~ (Soon)
 - FortSearchResponse (Method 101)
@@ -12,20 +12,20 @@ Currently parses the following proto responses:
 - GetMapObjectsResponse (Method 106)
 - GymGetInfoResponse (Method 156)
 
-## Prerequisites  
-- [MySQL 8](https://dev.mysql.com/downloads/mysql/) or [MariaDB 10](https://mariadb.org/download/) database server  
+## Prerequisites
+- [MySQL 8](https://dev.mysql.com/downloads/mysql/) or [MariaDB 10](https://mariadb.org/download/) database server
 - [Redis Server](https://redis.io/download)
 
-## Installation  
-1.) Clone repository `git clone https://github.com/versx/DataParser`  
-2.) Install dependencies `npm install`  
-3.) Copy config `cp src/config.example.json src/config.json`  
-4.) Fill out config `vi src/config.json` (listening port, instances, db info, etc)  
-5.) Create PvP stat tables, run `npm run create-pvp-tables`  
-6.) Run `npm run start` (Database tables will be created if they don't exist)  
-7.) Point `data_endpoint` config property in [DeviceConfigManager](https://github.com/versx/DeviceConfigManager) to `http://dataparser_ip:9001`  
+## Installation
+1.) Clone repository `git clone https://github.com/WatWowMap/DataParser`
+2.) Install dependencies `npm install`
+3.) Copy config `cp src/config.example.json src/config.json`
+4.) Fill out config `vi src/config.json` (listening port, instances, db info, etc)
+5.) Create PvP stat tables, run `npm run create-pvp-tables`
+6.) Run `npm run start` (Database tables will be created if they don't exist)
+7.) Point `data_endpoint` config property in [DeviceConfigManager](https://github.com/versx/DeviceConfigManager) to `http://dataparser_ip:9001`
 
-## Configuration  
+## Configuration
 ```js
 {
     // Listening host interface
@@ -106,9 +106,9 @@ Currently parses the following proto responses:
 }
 ```
 
-## Updating  
-1.) `git pull`   
-3.) `npm install`  
+## Updating
+1.) `git pull`
+3.) `npm install`
 
-## Discord  
-https://discordapp.com/invite/zZ9h9Xa  
+## Discord
+https://discordapp.com/invite/zZ9h9Xa
